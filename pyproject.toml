@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lanshare"
+version = "0.1.0"
+description = "Share a folder with other devices on your local network from the terminal"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Kevin Liu"}]
+
+[project.scripts]
+lanshare = "lanshare.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["lanshare*"]
